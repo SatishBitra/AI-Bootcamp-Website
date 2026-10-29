@@ -525,3 +525,10 @@ html{scroll-behavior:smooth}
 :root[data-design-system="blue"] #pathways .section-title>p{justify-self:end;max-width:480px;margin:0 0 7px;color:#334155}
 @media(max-width:900px){:root[data-design-system="blue"] .hero-grid{grid-template-columns:1.08fr .92fr}:root[data-design-system="blue"] .hero h1{font-size:clamp(34px,4.3vw,44px)}:root[data-design-system="blue"] #pathways .section-title{grid-template-columns:minmax(0,1fr) minmax(270px,.8fr);gap:24px}}
 @media(max-width:680px){:root[data-design-system="blue"] .hero h1{font-size:clamp(27px,8.5vw,44px);line-height:1.08}:root[data-design-system="blue"] #pathways .section-title{grid-template-columns:1fr;gap:10px}:root[data-design-system="blue"] #pathways .section-title>p{justify-self:start;max-width:100%;margin:0}}
+:root[data-design-system="blue"] .btn,:root[data-design-system="blue"] .nav-cta,:root[data-design-system="blue"] .filter{font-size:15px;line-height:1.25}
+:root[data-design-system="blue"] .btn{gap:12px}
+:root[data-design-system="blue"] .filter{font-weight:600}
+@media(max-width:680px){:root[data-design-system="blue"] .btn,:root[data-design-system="blue"] .nav-cta,:root[data-design-system="blue"] .filter{font-size:14px}}
+:root[data-design-system="blue"] .nav{font-size:15px;gap:clamp(14px,2vw,28px)}
+@media(max-width:900px){:root[data-design-system="blue"] .nav{gap:14px}}
+@media(max-width:680px){:root[data-design-system="blue"] .nav{gap:0}:root[data-design-system="blue"] .nav>a:not(.nav-cta){font-size:16px}:root[data-design-system="blue"] .nav .nav-cta{font-size:15px}}
