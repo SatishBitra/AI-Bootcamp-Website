@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" fill="none">
+  <rect width="760" height="500" rx="8" fill="#E2FCFE"/>
+  <circle cx="642" cy="95" r="102" fill="#D7F3FA"/>
+  <circle cx="113" cy="420" r="92" fill="#EAF2FF"/>
+  <rect x="104" y="63" width="552" height="374" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M104 111h552" stroke="#DCE8F5" stroke-width="2"/>
+  <circle cx="133" cy="87" r="5" fill="#16A6C7"/><circle cx="152" cy="87" r="5" fill="#CBD5E1"/><circle cx="171" cy="87" r="5" fill="#CBD5E1"/>
+  <text x="143" y="156" fill="#1769D2" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">A PROJECT TO TAKE WITH YOU</text>
+  <text x="143" y="205" fill="#0F172A" font-family="Arial,sans-serif" font-size="30" font-weight="700">Skills grow through practice.</text>
+  <text x="143" y="234" fill="#64748B" font-family="Arial,sans-serif" font-size="14">Choose a path. Work through a real task. Share what you made.</text>
+  <rect x="143" y="274" width="137" height="99" rx="4" fill="#F1F5F9" stroke="#DCE8F5"/>
+  <text x="161" y="303" fill="#64748B" font-family="Arial,sans-serif" font-size="11" letter-spacing="1">01</text>
+  <path d="M161 328h96M161 345h72" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="262" cy="353" r="4" fill="#67D4E9"/>
+  <path d="M296 322h27m-9-9 9 9-9 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="340" y="274" width="137" height="99" rx="4" fill="#EAF2FF" stroke="#DCE8F5"/>
+  <text x="358" y="303" fill="#1769D2" font-family="Arial,sans-serif" font-size="11" letter-spacing="1">02</text>
+  <path d="M358 328h96M358 345h72" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="459" cy="353" r="4" fill="#60A5FA"/>
+  <path d="M493 322h27m-9-9 9 9-9 9" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="537" y="274" width="94" height="99" rx="4" fill="#EFF6FF" stroke="#EFF6FF"/>
+  <text x="555" y="303" fill="#64748B" font-family="Arial,sans-serif" font-size="11" letter-spacing="1">03</text>
+  <path d="M555 328h57M555 345h44" stroke="#E2FCFE" stroke-width="5" stroke-linecap="round"/>
+  <path d="M143 399h488" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="143" y="420" fill="#64748B" font-family="Arial,sans-serif" font-size="10" letter-spacing="1">LEARN · APPLY · BUILD</text>
+  <path d="M613 405h18v18h-18z" rx="2" fill="#E2FCFE"/>
+  <path d="m618 414 4 4 7-8" stroke="#1769D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" fill="none">
+  <rect width="800" height="520" rx="8" fill="#EFF6FF"/>
+  <path d="M0 411c120-65 224 33 356-8 152-47 250-83 444-12v129H0V411Z" fill="#EAF2FF"/>
+  <rect x="95" y="72" width="610" height="374" rx="5" fill="#FAFCFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="132" y="120" fill="#64748B" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">FROM PROMPT TO AGENT</text>
+  <text x="132" y="162" fill="#0F172A" font-family="Arial,sans-serif" font-size="26" font-weight="700">A system that can use tools.</text>
+  <rect x="132" y="201" width="150" height="122" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="152" y="232" fill="#64748B" font-family="Arial,sans-serif" font-size="12">QUESTION</text>
+  <path d="M152 254h108M152 271h88M152 288h99" stroke="#C7D0CD" stroke-width="5" stroke-linecap="round"/>
+  <path d="M299 262h44m-12-12 12 12-12 12" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="424" cy="262" r="70" fill="#E2FCFE" stroke="#CBD5E1" stroke-width="2"/>
+  <circle cx="424" cy="262" r="37" fill="#FAFCFF" stroke="#CBD5E1" stroke-width="2"/>
+  <circle cx="424" cy="262" r="8" fill="#3B82F6"/>
+  <path d="M424 225v-16m36 53h18m-54 37v16m-36-53h-18" stroke="#67D4E9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M505 262h38m-12-12 12 12-12 12" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="559" y="201" width="112" height="54" rx="4" fill="#EFF6FF" stroke="#EAF2FF"/>
+  <text x="577" y="233" fill="#1769D2" font-family="Arial,sans-serif" font-size="13">TOOLS</text>
+  <rect x="559" y="269" width="112" height="54" rx="4" fill="#EFF6FF" stroke="#CBD5E1"/>
+  <text x="577" y="301" fill="#334155" font-family="Arial,sans-serif" font-size="13">DATA</text>
+  <path d="M132 365h539" stroke="#DCE8F5" stroke-width="2"/>
+  <text x="132" y="397" fill="#64748B" font-family="Arial,sans-serif" font-size="13">Plan → connect → test → review</text>
+</svg>
