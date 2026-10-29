@@ -724,3 +724,25 @@ html{scroll-behavior:smooth}
 @media(max-width:680px){:root[data-design-system="blue"] .bootcamp-grid .boot-card{grid-template-columns:1fr;min-height:unset}:root[data-design-system="blue"] .bootcamp-grid .boot-image-art{height:auto;min-height:0;aspect-ratio:1.5;padding:8px}:root[data-design-system="blue"] .bootcamp-grid .boot-image-art img{position:absolute;inset:0;width:100%;height:100%;padding:12px}:root[data-design-system="blue"] .bootcamp-grid .boot-copy{padding:19px 18px 21px}.sticky-course-bar .association-lockup>span{max-width:76px;font-size:6.5px}.sticky-course-bar .association-lockup>img{width:38px;height:38px}.sticky-course-bar .sticky-course-button{padding-inline:8px;font-size:11px;gap:5px}}
 .sticky-course-bar{width:min(520px,calc(100vw - 36px));}
 @media(max-width:680px){.sticky-course-bar{width:min(440px,calc(100vw - 24px))}}
+
+/* Bootcamp cards: compact visual marks and a clear, consistent content hierarchy. */
+:root[data-design-system="blue"] .bootcamp-grid .boot-card{position:relative;display:flex;flex-direction:column;min-height:310px;padding:24px 26px 20px;background:linear-gradient(145deg,#FFFFFF 0%,#FBFDFF 100%);border:1px solid #D8E5F3;border-radius:18px;box-shadow:0 10px 28px #0B2A5B0A;overflow:hidden;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+:root[data-design-system="blue"] .bootcamp-grid .boot-card:hover{transform:translateY(-3px);border-color:#A9C8E9;box-shadow:0 16px 35px #0B2A5B12}
+:root[data-design-system="blue"] .boot-card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#1769D2,#67D4E9)}
+:root[data-design-system="blue"] .boot-card-head{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:90px}
+:root[data-design-system="blue"] .boot-card-head>.eyebrow{color:#1769D2;max-width:calc(100% - 92px);font-size:10px;line-height:1.5;letter-spacing:.11em}
+:root[data-design-system="blue"] .boot-icon-art{display:grid;place-items:center;width:78px;height:78px;flex:none;overflow:hidden;border:1px solid #D7E7F6;border-radius:18px;background:linear-gradient(145deg,#E2FCFE,#EFF6FF);box-shadow:inset 0 1px 0 #fff}
+:root[data-design-system="blue"] .boot-icon-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:left center;border-radius:17px}
+:root[data-design-system="blue"] .boot-copy{display:flex;flex:1;flex-direction:column;align-items:stretch;padding:18px 0 0;gap:0}
+:root[data-design-system="blue"] .boot-copy h3{margin:0 0 10px;color:#0F172A;font:600 clamp(20px,2vw,25px)/1.22 var(--display);letter-spacing:-.035em}
+:root[data-design-system="blue"] .boot-copy>p{margin:0 0 20px;color:#475569;font:400 14px/1.65 var(--body)}
+:root[data-design-system="blue"] .boot-copy .fact-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-bottom:17px}
+:root[data-design-system="blue"] .boot-copy .fact-chips span{padding:7px 11px;background:#F1F7FF;border:1px solid #D8E5F3;border-radius:999px;color:#334155;font:500 12px/1.2 var(--body)}
+:root[data-design-system="blue"] .boot-copy .arrow-link{display:flex;justify-content:space-between;align-items:center;margin-top:0;padding-top:14px;border-top:1px solid #DCE8F5;color:#1040A4;font:600 14px/1.4 var(--body)}
+:root[data-design-system="blue"] .boot-copy .arrow-link>span{border-color:#C6D9EE}
+@media(max-width:900px){:root[data-design-system="blue"] .bootcamp-grid .boot-card{min-height:300px;padding:21px}:root[data-design-system="blue"] .boot-card-head{min-height:80px}:root[data-design-system="blue"] .boot-icon-art{width:68px;height:68px}:root[data-design-system="blue"] .boot-copy h3{font-size:21px}}
+@media(max-width:680px){:root[data-design-system="blue"] .bootcamp-grid{grid-template-columns:1fr}:root[data-design-system="blue"] .bootcamp-grid .boot-card{min-height:unset;padding:19px 20px 17px}:root[data-design-system="blue"] .boot-card-head{min-height:70px}:root[data-design-system="blue"] .boot-icon-art{width:62px;height:62px;border-radius:15px}:root[data-design-system="blue"] .boot-icon-art img{border-radius:14px}:root[data-design-system="blue"] .boot-copy{padding-top:14px}:root[data-design-system="blue"] .boot-copy h3{font-size:20px}:root[data-design-system="blue"] .boot-copy>p{font-size:13px;margin-bottom:16px}}
+.boot-detail-image{position:relative;min-height:390px;aspect-ratio:1.2;overflow:hidden;border:1px solid #D4E3F3;border-radius:18px;background:#EFF6FF;box-shadow:0 18px 50px #0B2A5B12}
+.boot-detail-image img{display:block;width:100%;height:100%;min-height:390px;position:absolute;inset:0;object-fit:contain;object-position:center;padding:12px}
+@media(max-width:900px){.boot-detail-image,.boot-detail-image img{min-height:300px}}
+@media(max-width:680px){.boot-detail-image,.boot-detail-image img{min-height:240px}}
