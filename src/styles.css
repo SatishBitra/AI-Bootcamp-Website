@@ -535,3 +535,5 @@ html{scroll-behavior:smooth}
 :root[data-design-system="blue"] .method-intro>p{color:#F1F5F9!important}
 :root[data-design-system="blue"] .method-step .step-mark{color:#FFFFFF}
 :root[data-design-system="blue"] .method-step .step-mark svg,:root[data-design-system="blue"] .method-step .step-arrow{color:#FFFFFF;stroke:#FFFFFF}
+.method .method-intro>p{color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF}
+.method .method-step .step-mark svg,.method .method-step .step-arrow{color:#FFFFFF!important;stroke:#FFFFFF!important}
