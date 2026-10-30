@@ -820,3 +820,11 @@ html{scroll-behavior:smooth}
 @media(max-width:680px){
   :root[data-design-system="blue"] .hero h1{font-size:clamp(26px,8.2vw,42px);line-height:1.08}
 }
+
+/* Smooth, one-time reveal for section copy and a softer lift for content cards. */
+.reveal-enabled [data-reveal][data-revealed="true"]{animation:scroll-text-reveal .68s cubic-bezier(.22,.72,.18,1) backwards;animation-delay:var(--reveal-delay,0ms)}
+.reveal-enabled :is(.course-card,.blog-card,.path-card,.boot-card,.phase-card,.method-step,.boot-step-grid article,.why-grid article,.detail-facts>div,.outcome-list>div)[data-reveal][data-revealed="true"]{animation:scroll-card-reveal .72s cubic-bezier(.22,.72,.18,1) backwards;animation-delay:var(--reveal-delay,0ms)}
+.reveal-enabled [data-reveal]:focus-within{animation:none!important;opacity:1;transform:none;filter:none}
+@keyframes scroll-text-reveal{from{opacity:0;transform:translate3d(0,14px,0);filter:blur(2px)}to{opacity:1;transform:translate3d(0,0,0);filter:blur(0)}}
+@keyframes scroll-card-reveal{from{opacity:0;transform:translate3d(0,18px,0) scale(.985)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.reveal-enabled [data-reveal][data-revealed="true"]{animation:none!important;filter:none!important}}
