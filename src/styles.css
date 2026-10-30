@@ -851,3 +851,38 @@ html{scroll-behavior:smooth}
 :root[data-design-system="blue"] .detail-crumb>svg{flex:none;color:#94A3B8}
 :root[data-design-system="blue"] .detail-crumb>span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#0F172A}
 @media(max-width:680px){:root[data-design-system="blue"] .detail-crumb{width:auto;margin:0;padding:14px 18px 10px;font-size:12px}}
+
+/* Course and bootcamp detail pages use the same readable body scale as the catalogue. */
+:root[data-design-system="blue"] .detail-copy>p,:root[data-design-system="blue"] .boot-detail-copy>p{font-size:16px;line-height:1.72;color:#334155}
+:root[data-design-system="blue"] .detail-facts span{font-size:11px;letter-spacing:.09em;color:#64748B}
+:root[data-design-system="blue"] .detail-facts b{font-size:15px;line-height:1.5;color:#1E3555}
+:root[data-design-system="blue"] .outcome-list b{font-size:15px;line-height:1.5}
+:root[data-design-system="blue"] .curriculum-head>p,:root[data-design-system="blue"] .audience-prereq p{font-size:15px;line-height:1.7;color:#334155}
+:root[data-design-system="blue"] .phase-card>p,:root[data-design-system="blue"] .phase-card li{font-size:14px;line-height:1.6;color:#334155}
+:root[data-design-system="blue"] .phase-card>span,:root[data-design-system="blue"] .boot-step-grid article>span{font-size:11px}
+:root[data-design-system="blue"] .audience-prereq li{font-size:14px;line-height:1.55}
+:root[data-design-system="blue"] .boot-step-grid p,:root[data-design-system="blue"] .privacy-callout p,:root[data-design-system="blue"] .boot-task-section>div>p,:root[data-design-system="blue"] .boot-outcome-panel>div:first-child>p{font-size:14px;line-height:1.7}
+:root[data-design-system="blue"] .course-visual-caption>small{font-size:13px}
+:root[data-design-system="blue"] .blog-article-head>p,:root[data-design-system="blue"] .blog-article-body p{font-size:15px;line-height:1.75;color:#334155}
+:root[data-design-system="blue"] .boot-index-head>p,:root[data-design-system="blue"] .boot-format-note p{font-size:15px;line-height:1.7}
+:root[data-design-system="blue"] .finder-intro>p{font-size:16px;line-height:1.7}
+:root[data-design-system="blue"] .finder-form-column .option{font-size:14px;line-height:1.45}
+:root[data-design-system="blue"] .finder-disclaimer{font-size:13px;line-height:1.6}
+@media(max-width:680px){
+  :root[data-design-system="blue"] .detail-copy>p,:root[data-design-system="blue"] .boot-detail-copy>p{font-size:15px}
+  :root[data-design-system="blue"] .detail-facts b{font-size:14px}
+  :root[data-design-system="blue"] .outcome-list b,:root[data-design-system="blue"] .phase-card>p,:root[data-design-system="blue"] .phase-card li,:root[data-design-system="blue"] .audience-prereq li,:root[data-design-system="blue"] .boot-step-grid p,:root[data-design-system="blue"] .privacy-callout p{font-size:13px}
+  :root[data-design-system="blue"] .blog-article-head>p,:root[data-design-system="blue"] .blog-article-body p,:root[data-design-system="blue"] .finder-intro>p{font-size:14px}
+  :root[data-design-system="blue"] .finder-form-column .option{font-size:14px}
+  :root[data-design-system="blue"] .finder-disclaimer{font-size:12px}
+}
+
+/* The Don Bosco association mark is an independent bottom-right sticky lockup. */
+.sticky-course-bar{width:max-content;min-height:64px;padding:8px 12px;justify-content:center;gap:0}
+.sticky-course-bar .sticky-course-button{min-height:48px;padding-inline:24px;font-size:15px}
+.sticky-association{position:fixed;z-index:39;right:clamp(16px,2.5vw,36px);bottom:17px;width:126px;padding:9px 12px 7px;display:flex;flex-direction:column;align-items:center;gap:3px;border:1px solid rgba(255,255,255,.75);border-radius:16px;background:rgba(242,249,255,.72);box-shadow:0 12px 34px rgba(11,42,91,.15),inset 0 1px 0 rgba(255,255,255,.85);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .34s ease,transform .34s cubic-bezier(.2,.72,.18,1),visibility .34s;pointer-events:none}
+.sticky-association.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
+.sticky-association>span{font:600 7px/1.3 var(--mono);letter-spacing:.13em;color:#647C98;text-align:center}
+.sticky-association>img{display:block;width:72px;height:57px;object-fit:contain;object-position:center}
+@media(max-width:680px){.sticky-course-bar{bottom:10px;min-height:58px;padding:6px 8px}.sticky-course-bar .sticky-course-button{min-height:44px;padding-inline:18px;font-size:14px}.sticky-association{right:12px;bottom:77px;width:98px;padding:7px 8px 5px;border-radius:13px}.sticky-association>span{font-size:6px}.sticky-association>img{width:59px;height:46px}}
+@media(prefers-reduced-motion:reduce){.sticky-association{transition:none;transform:none}}
