@@ -751,13 +751,32 @@ html{scroll-behavior:smooth}
 
 /* Keep the hero and moving tool marks together within a typical desktop viewport. */
 @media(min-width:901px){
-  :root[data-design-system="blue"] .hero{padding-top:clamp(20px,3.5vh,34px);padding-bottom:0}
-  :root[data-design-system="blue"] .hero-grid{min-height:clamp(360px,calc(100svh - 340px),500px)}
-  :root[data-design-system="blue"] .hero-photo{height:clamp(360px,calc(100svh - 340px),500px)}
-  :root[data-design-system="blue"] .tools-section{padding-top:13px;padding-bottom:14px}
-  :root[data-design-system="blue"] .tools-heading{margin-bottom:4px}
-  :root[data-design-system="blue"] .tools-heading h2{margin-bottom:1px}
-  :root[data-design-system="blue"] .tools-section .tool-wordmark-list{gap:clamp(30px,4.5vw,64px);padding:4px 24px}
+  :root[data-design-system="blue"] .hero{max-width:1440px;padding:clamp(26px,3.2vh,40px) clamp(42px,6vw,88px) 0}
+  :root[data-design-system="blue"] .hero-grid{min-height:clamp(390px,calc(100svh - 390px),490px);grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(40px,5vw,76px)}
+  :root[data-design-system="blue"] .hero-copy{max-width:690px}
+  :root[data-design-system="blue"] .hero h1{max-width:700px;font-size:clamp(48px,4.2vw,62px);line-height:1.06;margin:18px 0 17px;letter-spacing:-.055em}
+  :root[data-design-system="blue"] .hero-copy>p{max-width:510px;font-size:17px;line-height:1.65}
+  :root[data-design-system="blue"] .hero-actions{margin-top:23px;gap:14px}
+  :root[data-design-system="blue"] .hero-photo{height:clamp(390px,calc(100svh - 390px),490px);border-radius:24px}
+  :root[data-design-system="blue"] .tools-section{max-width:1200px;padding:24px 0 20px;margin-top:10px;border-top:0}
+  :root[data-design-system="blue"] .tools-heading{margin-bottom:8px}
+  :root[data-design-system="blue"] .tools-heading h2{font-size:17px;margin-bottom:2px}
+  :root[data-design-system="blue"] .tools-heading p{font-size:12px}
+  :root[data-design-system="blue"] .tools-section .tool-wordmark-list{gap:clamp(32px,4.5vw,64px);padding:7px 24px}
   :root[data-design-system="blue"] .tools-section .tool-wordmark{width:46px;height:46px;flex-basis:46px}
   :root[data-design-system="blue"] .tools-section .tool-wordmark img{width:38px;height:38px}
 }
+
+/* Consistent, intentional logo placeholders for courses without supplied artwork. */
+:root[data-design-system="blue"] .course-logo-placeholder{height:88px;margin:15px 0 12px;padding:15px 17px;display:flex;align-items:center;gap:14px;border:1px solid #DCE8F5;border-radius:13px;background:linear-gradient(115deg,#F1F7FF,#F7FCFF);color:#0B2A5B}
+:root[data-design-system="blue"] .course-logo-placeholder .course-logo-symbol{width:48px;height:48px;display:grid;place-items:center;flex:none;border-radius:12px;background:#E2F3FC;color:#1769D2}
+:root[data-design-system="blue"] .course-logo-placeholder.is-sap .course-logo-symbol{background:#E3F8FA;color:#087F98}
+:root[data-design-system="blue"] .course-logo-placeholder>span:last-child{display:grid;gap:5px}
+:root[data-design-system="blue"] .course-logo-placeholder b{font:650 16px/1.15 var(--display);letter-spacing:.02em;color:#0B2A5B}
+:root[data-design-system="blue"] .course-logo-placeholder small{font:500 9px/1.3 var(--mono);letter-spacing:.065em;color:#64748B}
+:root[data-design-system="blue"] .course-card:has(.course-logo-placeholder){min-height:340px}
+/* A restrained amber thread balances the cool blue palette. */
+:root[data-design-system="blue"] .method-step:nth-child(2)>span{color:#FFC66D}
+:root[data-design-system="blue"] .duration-badge svg{color:#C47A08}
+:root[data-design-system="blue"] .hero .eyebrow i{background:#F5A623}
+@media(max-width:680px){:root[data-design-system="blue"] .course-logo-placeholder{height:76px;margin:12px 0 8px;padding:12px}.course-logo-placeholder .course-logo-symbol{width:42px;height:42px}.course-logo-placeholder b{font-size:14px}.course-logo-placeholder small{font-size:8px}:root[data-design-system="blue"] .course-card:has(.course-logo-placeholder){min-height:310px}}
