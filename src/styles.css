@@ -780,3 +780,27 @@ html{scroll-behavior:smooth}
 :root[data-design-system="blue"] .duration-badge svg{color:#C47A08}
 :root[data-design-system="blue"] .hero .eyebrow i{background:#F5A623}
 @media(max-width:680px){:root[data-design-system="blue"] .course-logo-placeholder{height:76px;margin:12px 0 8px;padding:12px}.course-logo-placeholder .course-logo-symbol{width:42px;height:42px}.course-logo-placeholder b{font-size:14px}.course-logo-placeholder small{font-size:8px}:root[data-design-system="blue"] .course-card:has(.course-logo-placeholder){min-height:310px}}
+
+/* Amber hover accents, restrained section spacing, and breathing room around the tool rail. */
+:root[data-design-system="blue"] .nav>a:not(.nav-cta){transition:color .18s ease}
+:root[data-design-system="blue"] .nav>a:not(.nav-cta):hover,:root[data-design-system="blue"] .nav>a:not(.nav-cta):focus-visible{color:#A95600}
+:root[data-design-system="blue"] .footer-links a{transition:color .18s ease}
+:root[data-design-system="blue"] .footer-links a:hover,:root[data-design-system="blue"] .footer-links a:focus-visible{color:#FFC66D}
+@media(min-width:901px){
+  :root[data-design-system="blue"] .hero{padding-bottom:22px}
+  :root[data-design-system="blue"] .tools-section{padding-top:34px}
+  :root[data-design-system="blue"] .home-why.section-pad{padding-top:68px}
+}
+@media(max-width:900px){
+  :root[data-design-system="blue"] .hero{padding-bottom:18px}
+  :root[data-design-system="blue"] .tools-section{padding-top:28px}
+  :root[data-design-system="blue"] .home-why.section-pad{padding-top:56px}
+}
+@media(max-width:680px){
+  :root[data-design-system="blue"] .hero{padding-bottom:16px}
+  :root[data-design-system="blue"] .tools-section{padding-top:23px}
+  :root[data-design-system="blue"] .home-why.section-pad{padding-top:48px}
+}
+:root[data-design-system="blue"] .tools-section{padding-bottom:56px}
+@media(max-width:900px){:root[data-design-system="blue"] .tools-section{padding-bottom:44px}}
+@media(max-width:680px){:root[data-design-system="blue"] .tools-section{padding-bottom:36px}}
