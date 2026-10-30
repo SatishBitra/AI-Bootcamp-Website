@@ -836,3 +836,12 @@ html{scroll-behavior:smooth}
 :root[data-design-system="blue"] .finder-symbol{border-color:#D99A28;background:#FFF9ED;color:#9A5A00}
 :root[data-design-system="blue"] .sticky-course-button svg{color:#FFFFFF!important;stroke:#FFFFFF!important}
 :root[data-design-system="blue"] #main:has(.final-cta){padding-bottom:0}
+:root[data-design-system="blue"] #main:has(.final-prompt){padding-bottom:0}
+
+/* Course breadcrumbs sit on the page surface and share the detail content grid. */
+:root[data-design-system="blue"] .detail-crumb{width:min(1200px,calc(100% - 64px));margin:0 auto;padding:18px 0 14px;background:transparent;border:0;color:#64748B;font-size:13px;line-height:1.45}
+:root[data-design-system="blue"] .detail-crumb>a{color:#475569;transition:color .18s ease}
+:root[data-design-system="blue"] .detail-crumb>a:hover{color:#1769D2}
+:root[data-design-system="blue"] .detail-crumb>svg{flex:none;color:#94A3B8}
+:root[data-design-system="blue"] .detail-crumb>span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#0F172A}
+@media(max-width:680px){:root[data-design-system="blue"] .detail-crumb{width:auto;margin:0;padding:14px 18px 10px;font-size:12px}}
